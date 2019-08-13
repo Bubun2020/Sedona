@@ -32,7 +32,8 @@
     <!-- main-top -->
     <section class="main__top">
       <div class="container">
-        <div class="top__inner">
+        <!-- старая версия -->
+        <!-- <div class="top__inner">
           <div class="top__suptitle">
             <div class="top__subtitle--greeting">
               <img src="img/Welcome.png" width="188" height="45" alt="welcome">
@@ -47,7 +48,12 @@
           <div class="top__subtitle">
             <img src="img/Because the Grand  Canyon sucks_.png" width="296" height="80" alt="Because the Grand  Canyon sucks_.png">
           </div>
-        </div>
+        </div> -->
+
+        <!-- новая версия -->
+      <div class="top-inner">
+        <img src="img/title-phrase.png" width="458" height="352" alt="Промо Седоны">
+      </div>
       </div>
     </section>
     <!-- main-content -->
@@ -136,13 +142,45 @@
   </main>
   <!-- всплывающее окно -->
   <section class="modal modal-search">
-    <!-- здесь будет форма -->
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="arrive-date">
+        <label for="arrive-date">Дата заезда:</label>
+        <input id="arrive-date" type="text" name="arrive-date-field" value="" placeholder="24 апреля 2017">
+        <span class="input-img"></span>
+      </div>
+      <div class="departure-date">
+        <label for="departure-date">Дата выезда:</label>
+        <input id="departure-date" type="text" name="departure-date-field" value="" placeholder="4 июля 2017">
+        <span class="input-img"></span>
+      </div>
+      <div class="search-wrap">
+        <label for="adult">Взрослые:</label>
+        <div class="adult">
+          <button type="button" class="btn">-
+          <span class="visually-hidden">Уменьшить</span></button>
+          <input id="adult" type="text" name="adult-field" value="" placeholder="2">
+          <button type="button" class="btn">+
+          <span class="visually-hidden">Увеличить</span></button>
+        </div>
+      </div>
+      <div class="search-wrap">
+        <label for="kids">Дети:</label>
+        <div class="kids">
+          <button type="button" class="btn">-
+          <span class="visually-hidden">Уменьшить</span></button>
+          <input id="kids" type="text" name="kids-field" value="" placeholder="0">
+          <button type="button" class="btn">+
+          <span class="visually-hidden">Увеличить</span></button>
+        </div>
+      </div>
+      <button type="submit" class="button">Найти</button>
+    </form>
   </section>
   <!-- footer -->
   <!-- футер с прозрачностью! -->
   <footer class="main-footer">
     <div class="footer-tag">
-      #visitSEDONA
+      #visitsedona
     </div>
     <div class="footer-social">
       <ul class="footer-social__list">
