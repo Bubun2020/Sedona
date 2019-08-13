@@ -28,12 +28,72 @@
   <!-- main-content -->
   <main class="hotels">
     <h1 class="visually-hidden">Выбор отелей Седоны</h1>
-    <section class="hotels-forms">
-      <!-- здесь будут формы  -->
+    <section class="hotels-filters">
+      <h2 class="visually-hidden">Варианты отелей Седоны</h2>
+      <form class="hotels-filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" name="pool-field" id="filter-pool" class="visually-hidden" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="parking-field" id="filter-parking" class="visually-hidden">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="wifi-field" id="filter-wifi" class="visually-hidden">
+              <label for="filter-wifi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" name="hotel-field" id="filter-hotel" class="visually-hidden" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="motel-field" id="filter-motel" class="visually-hidden" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="apartments-field" id="filter-apartments" class="visually-hidden" checked>
+              <label for="filter-apartments">Аппартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <div class="range">
+            <div class="range__fields">
+              <div class="range__field">
+                <label for="range1">От</label>
+                <input type="text" name="price-field-from" id="range1">
+              </div>
+              <div class="range__field">
+                <label for="range2">До</label>
+                <input type="text" name="price-field-to" id="range2">
+              </div>
+            </div>
+            <div class="range__bar">
+              <div class="range_scale">Шкала</div>
+
+              <button class="range__button range__button--from" type="button">От</button>
+              <button class="range__button range__button--to" type="button">До</button>
+            </div>
+          </div>
+
+          <!-- этот баттон скорее всего вынести за пределы фиелдсета -->
+          <button class="btn btn--transparent" type="submit">Показать</button>
+        </fieldset>
+      </form>
     </section>
     <!-- sorting -->
     <section class="hotels-sort">
-      <h2 class="visually-hidden">Фильтры</h2>
+      <h2 class="visually-hidden">Отели в наличии</h2>
       <ul class="hotel-sort__list">
         <li class="hotel-sort__item">
           <div class="hotel-sort__title">Найдено: 3</div>
