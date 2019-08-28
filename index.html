@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,183 +20,169 @@
             <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
           </div>
           <ul class="header-menu">
-            <li><a href="#">Информация</a></li>
+            <li><a class="header-menu-current">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
+        <!-- sedona-promo-image -->
+        <div class="main__promo">
+          <!-- если надо, убрать лишнюю обертку -->
+          <div class="promo-inner">
+            <img src="img/title-phrase.png" width="458" height="352" alt="Промо Седоны">
+          </div>
+        </div>
       </div>
     </header>
-  </div>
-  <!-- main-content -->
-  <main class="main">
-    <h1 class="visually-hidden">Sedona</h1>
-    <!-- main-top -->
-    <section class="main__top">
-      <div class="container">
-        <!-- старая версия -->
-        <!-- <div class="top__inner">
-          <div class="top__suptitle">
-            <div class="top__subtitle--greeting">
-              <img src="img/Welcome.png" width="188" height="45" alt="welcome">
-            </div>
-            <div class="top__subtitle--text">
-              <img src="img/to the gorgeous.png" width="176" height="30" alt="to the gorgeous">
-            </div>
-          </div>
-          <div class="top__title">
-            <img src="img/Sedona.png" width="458" height="78" alt="Sedona">
-          </div>
-          <div class="top__subtitle">
-            <img src="img/Because the Grand  Canyon sucks_.png" width="296" height="80" alt="Because the Grand  Canyon sucks_.png">
-          </div>
-        </div> -->
 
-        <!-- новая версия -->
-      <div class="top-inner">
-        <img src="img/title-phrase.png" width="458" height="352" alt="Промо Седоны">
-      </div>
-      </div>
-    </section>
     <!-- main-content -->
-    <section class="main__content">
-      <div class="container">
+    <main class="main">
+      <h1 class="visually-hidden">Sedona</h1>
+      <!-- sedona-description -->
+      <div class="sedona-description">
         <h2 class="main__content--title">Седона — небольшой городок в аризоне, заслуживающий большего!
         </h2>
         <p class="main__content--text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="main__features-list">
-          <!-- 1-й блок -->
-          <li class="main__features--item">
-            <div class="item__description">
-              <b class="item__description--title">Настоящий городок</b>
-              <span class="item_description--number">№1</span>
-              <p class="item__description--text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <div class="item__image"></div>
-          </li>
-          <!-- 2-й блок -->
-          <li class="main__features--item">
-            <div class="item__description">
-              <b class="item__description--title">Там есть мост дьявола</b>
-              <span class="item_description--number">№2</span>
-              <p class="item__description--text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
-            <div class="item__image"></div>
-          </li>
-          <!-- 3-й блок -->
-          <li class="main__features--item">
-            <div class="item__description">
-              <b class="item__description--title">Небольшая площадь</b>
-              <span class="item_description--number">№3</span>
-              <p class="item__description--text">Все достопримечательности находятся очень близко</p>
-            </div>
-          </li>
-          <!-- 4-й блок -->
-          <li class="main__features--item">
-            <div class="item__description">
-              <b class="item__description--title">Красивая дорога</b>
-              <span class="item_description--number">№4</span>
-              <p class="item__description--text">Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </div>
-          </li>
-          <!-- 5-й блок -->
-          <li class="main__features--item">
-            <div class="item__description">
-              <b class="item__description--title">Мало туристов</b>
-              <span class="item_description--number">№5</span>
-              <p class="item__description--text">Большинство едет в гранд каньон и толпится там</p>
-            </div>
-          </li>
-          <li class="main__features--item">
-            <ul class="features-more__list">
-              <li class="features-more__item">
-                <div class="more__image"></div>
-                <span class="more__item-title">Жилье</span>
-                <p class="more__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="features-more__item">
-                <div class="more__image"></div>
-                <span class="more__item-title">Еда</span>
-                <p class="more__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-                </p>
-              </li>
-              <li class="features-more__item">
-                <div class="more__image"></div>
-                <span class="more__item-title">Сувениры</span>
-                <p class="more__item-text">Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </li>
+      </div>
+
+      <!-- main-content-title -->
+      <section class="main__content">
+        <div class="container">
+          <ul class="main__features-list">
+            <!-- 1-й блок -->
+            <li class="main__features--item">
+              <div class="item__description">
+                <b class="item__description--title">Настоящий городок</b>
+                <span class="item__description--number">№1</span>
+                <p class="item__description--text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="item__image"></div>
+            </li>
+            <!-- 2-й блок -->
+            <li class="main__features--item">
+              <div class="item__description">
+                <b class="item__description--title">Там есть мост дьявола</b>
+                <span class="item__description--number">№2</span>
+                <p class="item__description--text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
+              <div class="item__image"></div>
+            </li>
+            <!-- 3-й блок -->
+            <li class="main__features--item">
+              <div class="item__description">
+                <b class="item__description--title">Небольшая площадь</b>
+                <span class="item__description--number">№3</span>
+                <p class="item__description--text">Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <!-- 4-й блок -->
+            <li class="main__features--item">
+              <div class="item__description">
+                <b class="item__description--title">Красивая дорога</b>
+                <span class="item__description--number">№4</span>
+                <p class="item__description--text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <!-- 5-й блок -->
+            <li class="main__features--item">
+              <div class="item__description">
+                <b class="item__description--title">Мало туристов</b>
+                <span class="item__description--number">№5</span>
+                <p class="item__description--text">Большинство едет в гранд каньон и толпится там</p>
+              </div>
+            </li>
+            <!-- 6-й блок, смещенный -->
+            <li class="main__features--item">
+              <ul class="features-more__list">
+                <li class="features-more__item">
+                  <div class="more__image"></div>
+                  <span class="item__description--title more__item-title">Жилье</span>
+                  <p class="more__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="features-more__item">
+                  <div class="more__image"></div>
+                  <span class="item__description--title more__item-title">Еда</span>
+                  <p class="more__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                  </p>
+                </li>
+                <li class="features-more__item">
+                  <div class="more__image"></div>
+                  <span class="item__description--title more__item-title">Сувениры</span>
+                  <p class="more__item-text">Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- main-locates -->
+      <section class="main-locate">
+        <div class="container">
+          <h2 class="main-locate__title">Заинтересовались?</h2>
+          <p class="main-locate__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="button main-locate__search">Поиск гостиницы в Седоне</button>
+          <div class="main-locate__map">
+            <a href="map.html"><img src="img/map.jpg" alt="Карта Седоны"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- всплывающее окно -->
+    <section class="modal modal-search">
+      <h2 class="visually-hidden">Модальное окно</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="arrive-date">
+          <label for="arrive-date">Дата заезда:</label>
+          <input id="arrive-date" type="text" name="arrive-date-field" value="24 апреля 2017" placeholder="">
+          <span class="input-img"></span>
+        </div>
+        <div class="departure-date">
+          <label for="departure-date">Дата выезда:</label>
+          <input id="departure-date" type="text" name="departure-date-field" value="4 июля 2017" placeholder="">
+          <span class="input-img"></span>
+        </div>
+        <div class="search-wrap">
+          <label for="adult">Взрослые:</label>
+          <div class="adult">
+            <button type="button" class="btn">-
+              <span class="visually-hidden">Уменьшить</span></button>
+            <input id="adult" type="text" name="adult-field" value="2" placeholder="">
+            <button type="button" class="btn">+
+              <span class="visually-hidden">Увеличить</span></button>
+          </div>
+        </div>
+        <div class="search-wrap">
+          <label for="kids">Дети:</label>
+          <div class="kids">
+            <button type="button" class="btn">-
+              <span class="visually-hidden">Уменьшить</span></button>
+            <input id="kids" type="text" name="kids-field" value="0" placeholder="">
+            <button type="button" class="btn">+
+              <span class="visually-hidden">Увеличить</span></button>
+          </div>
+        </div>
+        <button type="submit" class="button search-button">Найти</button>
+      </form>
+    </section>
+    <!-- footer -->
+    <!-- футер с прозрачностью! и position:absolute -->
+    <footer class="main-footer">
+      <div class="footer-tag">
+        #visitsedona
+      </div>
+      <div class="footer-social">
+        <ul class="footer-social__list">
+          <li class="social-button"><a href="#">Twitter</a></li>
+          <li class="social-button"><a href="#">Facebook</a></li>
+          <li class="social-button"><a href="#">YouTube</a></li>
         </ul>
       </div>
-    </section>
-    <!-- main-locates -->
-    <section class="main-locate">
-      <div class="container">
-        <h2 class="main-locate__title">Заинтересовались?</h2>
-        <p class="main-locate__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button main-locate__search">Поиск гостиницы в Седоне</button>
-        <div class="main-locate__map">
-          <a href="map.html"><img src="img/map.jpg" alt="Карта Седоны"></a>
-        </div>
+      <div class="footer-copyright">
+        <span>website by</span>
+        <span class="logo-html-academy">html academy</span>
       </div>
-    </section>
-  </main>
-  <!-- всплывающее окно -->
-  <section class="modal modal-search">
-    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-      <div class="arrive-date">
-        <label for="arrive-date">Дата заезда:</label>
-        <input id="arrive-date" type="text" name="arrive-date-field" value="" placeholder="24 апреля 2017">
-        <span class="input-img"></span>
-      </div>
-      <div class="departure-date">
-        <label for="departure-date">Дата выезда:</label>
-        <input id="departure-date" type="text" name="departure-date-field" value="" placeholder="4 июля 2017">
-        <span class="input-img"></span>
-      </div>
-      <div class="search-wrap">
-        <label for="adult">Взрослые:</label>
-        <div class="adult">
-          <button type="button" class="btn">-
-          <span class="visually-hidden">Уменьшить</span></button>
-          <input id="adult" type="text" name="adult-field" value="" placeholder="2">
-          <button type="button" class="btn">+
-          <span class="visually-hidden">Увеличить</span></button>
-        </div>
-      </div>
-      <div class="search-wrap">
-        <label for="kids">Дети:</label>
-        <div class="kids">
-          <button type="button" class="btn">-
-          <span class="visually-hidden">Уменьшить</span></button>
-          <input id="kids" type="text" name="kids-field" value="" placeholder="0">
-          <button type="button" class="btn">+
-          <span class="visually-hidden">Увеличить</span></button>
-        </div>
-      </div>
-      <button type="submit" class="button">Найти</button>
-    </form>
-  </section>
-  <!-- footer -->
-  <!-- футер с прозрачностью! -->
-  <footer class="main-footer">
-    <div class="footer-tag">
-      #visitsedona
-    </div>
-    <div class="footer-social">
-      <ul class="footer-social__list">
-        <li class="social-button"><a href="#">Twitter</a></li>
-        <li class="social-button"><a href="#">Facebook</a></li>
-        <li class="social-button"><a href="#">YouTube</a></li>
-      </ul>
-    </div>
-    <div class="footer-copyright">
-      <span>website by</span>
-      <span>html academy</span>
-    </div>
-  </footer>
+    </footer>
   </div>
 </body>
 
