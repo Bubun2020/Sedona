@@ -12,9 +12,9 @@
 <body>
   <!-- wrapper   -->
   <div class="wrapper">
-    <!-- header -->
-    <header class="header">
-      <div class="container">
+    <div class="container">
+      <!-- header -->
+      <header class="header">
         <nav class="navigation">
           <div class="header__logo">
             <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
@@ -33,22 +33,20 @@
             <img src="img/title-phrase.png" width="458" height="352" alt="Промо Седоны">
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- main-content -->
-    <main class="main">
-      <h1 class="visually-hidden">Sedona</h1>
-      <!-- sedona-description -->
-      <div class="sedona-description">
-        <h2 class="main__content--title">Седона — небольшой городок в аризоне, заслуживающий большего!
-        </h2>
-        <p class="main__content--text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </div>
+      <!-- main-content -->
+      <main class="main">
+        <h1 class="visually-hidden">Sedona</h1>
+        <!-- sedona-description -->
+        <div class="sedona-description">
+          <h2 class="main__content--title">Седона — небольшой городок в аризоне, заслуживающий большего!
+          </h2>
+          <p class="main__content--text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
 
-      <!-- main-content-title -->
-      <section class="main__content">
-        <div class="container">
+        <!-- main-content-title -->
+        <section class="main__content">
           <ul class="main__features-list">
             <!-- 1-й блок -->
             <li class="main__features--item">
@@ -57,16 +55,16 @@
                 <span class="item__description--number">№1</span>
                 <p class="item__description--text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="item__image"></div>
+              <div class="item__description-picture"></div>
             </li>
             <!-- 2-й блок -->
             <li class="main__features--item">
+              <div class="item__description-picture"></div>
               <div class="item__description">
                 <b class="item__description--title">Там есть мост дьявола</b>
                 <span class="item__description--number">№2</span>
                 <p class="item__description--text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
-              <div class="item__image"></div>
             </li>
             <!-- 3-й блок -->
             <li class="main__features--item">
@@ -114,76 +112,71 @@
               </ul>
             </li>
           </ul>
-        </div>
-      </section>
-      <!-- main-locates -->
-      <section class="main-locate">
-        <div class="container">
+        </section>
+        <!-- main-locates -->
+        <section class="main-locate">
           <h2 class="main-locate__title">Заинтересовались?</h2>
-          <p class="main-locate__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="main-locate__text">Укажите предполагаемые даты поездки,
+            <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button main-locate__search">Поиск гостиницы в Седоне</button>
           <div class="main-locate__map">
             <a href="map.html"><img src="img/map.jpg" alt="Карта Седоны"></a>
           </div>
-        </div>
+        </section>
+      </main>
+      <!-- всплывающее окно -->
+      <section class="modal modal-search">
+        <h2 class="visually-hidden">Модальное окно</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="arrive-date">
+            <label for="arrive-date">Дата заезда:</label>
+            <input id="arrive-date" type="text" name="arrive-date-field" value="24 апреля 2017" placeholder="">
+            <span class="input-img"></span>
+          </div>
+          <div class="departure-date">
+            <label for="departure-date">Дата выезда:</label>
+            <input id="departure-date" type="text" name="departure-date-field" value="4 июля 2017" placeholder="">
+            <span class="input-img"></span>
+          </div>
+          <div class="search-wrap">
+            <label for="adult">Взрослые:</label>
+            <div class="adult">
+              <button type="button" class="btn">-
+                <span class="visually-hidden">Уменьшить</span></button>
+              <input id="adult" type="text" name="adult-field" value="2" placeholder="">
+              <button type="button" class="btn">+
+                <span class="visually-hidden">Увеличить</span></button>
+            </div>
+          </div>
+          <div class="search-wrap">
+            <label for="kids">Дети:</label>
+            <div class="kids">
+              <button type="button" class="btn">-
+                <span class="visually-hidden">Уменьшить</span></button>
+              <input id="kids" type="text" name="kids-field" value="0" placeholder="">
+              <button type="button" class="btn">+
+                <span class="visually-hidden">Увеличить</span></button>
+            </div>
+          </div>
+          <button type="submit" class="button search-button">Найти</button>
+        </form>
       </section>
-    </main>
-    <!-- всплывающее окно -->
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Модальное окно</h2>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="arrive-date">
-          <label for="arrive-date">Дата заезда:</label>
-          <input id="arrive-date" type="text" name="arrive-date-field" value="24 апреля 2017" placeholder="">
-          <span class="input-img"></span>
+      <!-- footer -->
+      <!-- футер с прозрачностью! и position:absolute -->
+      <footer class="main-footer">
+        <div class="footer-tag">
+          #visitsedona
         </div>
-        <div class="departure-date">
-          <label for="departure-date">Дата выезда:</label>
-          <input id="departure-date" type="text" name="departure-date-field" value="4 июля 2017" placeholder="">
-          <span class="input-img"></span>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="social-button"><a href="#">Twitter</a></li>
+            <li class="social-button"><a href="#">Facebook</a></li>
+            <li class="social-button"><a href="#">YouTube</a></li>
+          </ul>
         </div>
-        <div class="search-wrap">
-          <label for="adult">Взрослые:</label>
-          <div class="adult">
-            <button type="button" class="btn">-
-              <span class="visually-hidden">Уменьшить</span></button>
-            <input id="adult" type="text" name="adult-field" value="2" placeholder="">
-            <button type="button" class="btn">+
-              <span class="visually-hidden">Увеличить</span></button>
-          </div>
+        <div class="footer-copyright">
+          <span>website by</span>
+          <span class="logo-html-academy">html academy</span>
         </div>
-        <div class="search-wrap">
-          <label for="kids">Дети:</label>
-          <div class="kids">
-            <button type="button" class="btn">-
-              <span class="visually-hidden">Уменьшить</span></button>
-            <input id="kids" type="text" name="kids-field" value="0" placeholder="">
-            <button type="button" class="btn">+
-              <span class="visually-hidden">Увеличить</span></button>
-          </div>
-        </div>
-        <button type="submit" class="button search-button">Найти</button>
-      </form>
-    </section>
-    <!-- footer -->
-    <!-- футер с прозрачностью! и position:absolute -->
-    <footer class="main-footer">
-      <div class="footer-tag">
-        #visitsedona
-      </div>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="social-button"><a href="#">Twitter</a></li>
-          <li class="social-button"><a href="#">Facebook</a></li>
-          <li class="social-button"><a href="#">YouTube</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <span>website by</span>
-        <span class="logo-html-academy">html academy</span>
-      </div>
-    </footer>
-  </div>
-</body>
-
-</html>
+      </footer>
+    </div>
