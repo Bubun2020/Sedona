@@ -36,6 +36,7 @@ a {
 }
 
 .container {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -46,6 +47,13 @@ a {
 .header {
   background-color: #f2f2f2;
   margin-bottom: 55px;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .navigation {
@@ -97,6 +105,7 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 510px;
+  background-image: url("../img/sedona-bg.jpg");
 }
 
 .promo-inner {
@@ -140,7 +149,6 @@ a {
 .main__features-list {
   display: flex;
   flex-wrap: wrap;
-
   padding: 0;
   margin: 0;
   text-align: center;
@@ -152,7 +160,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-basis: 100%;
-  min-height: 256px;/* временно */
+  min-height: 256px;
+  /* временно */
   order: 6;
 }
 
@@ -168,7 +177,6 @@ a {
   width: 800px;
   min-height: 256px;
   background-color: transparent;
-
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,7 +224,6 @@ a {
 .main__features--item:nth-child(4),
 .main__features--item:nth-child(5) {
   flex-basis: 400px;
-
   background-color: #eeeeee;
 }
 
@@ -312,11 +319,20 @@ a {
   background-color: #5884ad;
 }
 
+.hotels-filters__form {
+  display: flex;
+  justify-content: space-around;
+}
+
 .hotels-filters__form ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .hotels-filters fieldset {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -339,7 +355,13 @@ a {
 
 /* --- sorting ---  */
 .hotel-sort__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   list-style: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-sort__title {
@@ -437,12 +459,21 @@ a {
   background-color: #f2f2f2;
 }
 
+/* ----- inner-page ----- */
+.hotels-description__item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hotel-rate {
+  margin-left: auto;
+}
+
 /* ----- footer ----- */
 .main-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   background-color: rgba(249, 251, 246, 0.9);
 }
 
