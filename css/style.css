@@ -326,6 +326,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 27px;
 }
 
+.more__item-text {
+  padding: 0 80px;
+}
+
 .more__image {
   margin-bottom: 25px;
 
@@ -422,19 +426,30 @@ input[type="radio"].visually-hidden {
 }
 
 /* --- inner-page --- */
+.inner-page .header {
+  margin-bottom: 0;
+}
+
 .hotels-filters {
   color: #ffffff;
   background-color: #5884ad;
+  background-image: url("../img/background-blur.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hotels-filters__form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  padding: 25px 75px;
 }
 
 .hotels-filters__form ul {
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
 
@@ -444,9 +459,43 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.hotels-filters fieldset:first-child {
+  margin-right: 115px;
+}
+
+.hotels-filters fieldset:nth-child(2) {
+  margin-right: auto;
+}
+
 .hotels-filters legend {
+  margin-bottom: 25px;
+
   font-size: 16px;
   font-weight: 700;
+}
+
+.filter-option {
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 40px;
+}
+
+/* закончил здесь ..................................................................................................................*/
+.filter-option label {}
+
+.filter-option::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #ffffff;
+  border-radius: 4px;
 }
 
 .btn--transparent {
@@ -512,6 +561,11 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.hotels-description__item {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .hotel-title a {
   font-size: 21px;
   line-height: 26px;
@@ -568,10 +622,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* ----- inner-page ----- */
-.hotels-description__item {
-  display: flex;
-  justify-content: flex-start;
-}
+
 
 .hotel-rate {
   margin-left: auto;
@@ -660,4 +711,15 @@ input[type="radio"].visually-hidden {
   margin-right: 11px;
 
   line-height: 26px;
+}
+
+.inner-page .main-footer {
+  position: static;
+
+  padding: 38px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(249, 251, 246, 0.9);
 }
